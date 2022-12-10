@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    --black: #000;
+    --white: #fff;
+    --light: #8a8a8a;
+    --dark: #0c0d0d;
+    --clear: #1e1e1e;
+    --citrine: #f1f107;
+    --jasper: #ff494e;
+    --azurite: #03bdb8;
+    --technogod: #191a1a;
+    --darksmoke: #434343;
+    --lightsmoke: #f5f5f5;
+    --technogodjasper: #ff494e;
+    --technogodazurite: #03bdb8;
+    --technogodcitrine: #f1f107;
+    --technogodpearl: #e9e7e7;
+    cursor: default;
+    font-family: Orbitron;
+    overflow-x: hidden;
+    background-color: var(--black);
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+
+.blink-jasper {
+    fill: var(--jasper);
+    -webkit-animation: blinker-jasper 2s linear infinite;
+    animation: blinker-jasper 2s linear infinite;
+}
+
+@-webkit-keyframes blinker-jasper {
+    50% {
+        fill: var(--white);
+    }
+}
+@keyframes blinker-jasper {
+    50% {
+        fill: var(--white);
+    }
+}
+
+.text-jasper {
+    color: var(--jasper);
+}
+
+.btn-scale {
+    transform: none;
+    transition: all ease 0.5s;
+}
+.btn-scale:hover {
+    transform: scale(1.02) translateZ(0px);
+}
+
+.blink-white {
+    fill: var(--white);
+    -webkit-animation: blinker-white 2s linear infinite;
+    animation: blinker-white 2s linear infinite;
+}
+
+@-webkit-keyframes blinker-white {
+    50% {
+        fill: var(--jasper);
+    }
+}
+@keyframes blinker-white {
+    50% {
+        fill: var(--jasper);
+    }
+}
+
+@media (min-width: 600px) {
+    .tM\:flex {
+        display: flex;
+    }
+
+    .tM\:hidden {
+        display: none;
+    }
+
+    .tM\:text-2xl {
+        font-size: 1.5rem;
+    }
+}
+
+.bg-clear {
+    background-color: var(--clear);
+}
+
+.border-jasper {
+    border-color: var(--jasper);
+}
+
+.border-azurite {
+    border-color: var(--azurite);
+}
+
+@media (min-width: 768px) {
+    .tL\:px-30 {
+        padding-left: 7.25rem;
+        padding-right: 7.25rem;
+    }
+    .tL\:flex-row {
+        flex-direction: row;
+    }
+}
+@media (min-width: 924px) {
+    .lXs\:text-3xl {
+        font-size: 1.875rem;
+    }
+
+    .lXs\:justify-start {
+        justify-content: flex-start;
+    }
+}
+
+.bg-jasper {
+    background-color: var(--jasper);
+}
+
+.bg-dark {
+    background-color: var(--dark);
+}
+
+.bg-azurite {
+    background-color: var(--azurite);
+}
+
+.text-sm,
+.text-xl,
+.text-2xl,
+.text-3xl,
+.text-lg,
+.text-md {
+    line-height: inherit;
+}
